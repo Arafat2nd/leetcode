@@ -5,7 +5,7 @@ class Solution {
 
     for (int i = 0; i < nums.length - 2; i++) {
       if (i > 0 && nums[i] == nums[i - 1]) {
-        continue; // Skip duplicates
+        continue;
       }
 
       int left = i + 1;
@@ -20,10 +20,10 @@ class Solution {
           right--;
 
           while (left < right && nums[left] == nums[left - 1]) {
-            left++; // Skip duplicates
+            left++;
           }
           while (left < right && nums[right] == nums[right + 1]) {
-            right--; // Skip duplicates
+            right--;
           }
         } else if (sum < 0) {
           left++;
