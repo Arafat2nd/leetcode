@@ -10,10 +10,6 @@ class Solution {
       while (left < right) {
         int sum = nums[i] + nums[left] + nums[right];
 
-        if (sum == target) {
-          return target;
-        }
-
         if ((sum - target).abs() < (closest - target).abs()) {
           closest = sum;
         }
