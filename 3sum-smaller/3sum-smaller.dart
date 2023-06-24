@@ -1,5 +1,5 @@
 class Solution {
-  
+ 
   static int countTriplets(int sum,List<int>nums) {
     nums.sort();
     int count = 0;
